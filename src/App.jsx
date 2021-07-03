@@ -9,11 +9,27 @@ import Card from './components/layout/Card'
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import TblProds from './components/repeticao/TabelaProdutos'
+
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 export default _ =>  
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+
+            <Card titulo="#08 - Renderização Condicional" color="#982395">
+            <ParOuImpar numero={22}></ParOuImpar>
+                {/* 
+                <UsuarioInfo usuario={{ nome: "Fernando" }} />
+                <UsuarioInfo usuario={{}} />
+                <UsuarioInfo /> */}
+            </Card>
+
+            <Card titulo="#07 - Tabela de Produtos" color="#3A9AD9">
+                <TblProds></TblProds>
+            </Card>
             <Card titulo="#06 - Repetição" color="#FF4C65">
                 <ListaAlunos></ListaAlunos>
             </Card>
